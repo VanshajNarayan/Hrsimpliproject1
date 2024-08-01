@@ -1,6 +1,7 @@
 import "./SearchLocation.css";
 import { MdOutlineSearch, MdOutlineLocationOn } from "react-icons/md";
 
+
 function SearchLocation() {
   return (
     <>

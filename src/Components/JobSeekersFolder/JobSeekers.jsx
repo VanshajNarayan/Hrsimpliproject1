@@ -1,10 +1,19 @@
 import "./JobSeekers.css";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 function JobSeekers() {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+      offset: 450,
+    });
+  });
   return (
     <>
       <section className="jobSeekers_Section">
-        <div className="got_talent_box">
+        <div className="got_talent_box" data-aos = "fade-right">
           <h3 className="h3">Got Talent?</h3>
           <h5 className="h5">Why job seekers love us</h5>
           <ul className="ul">
@@ -20,7 +29,7 @@ function JobSeekers() {
             <li>join a network of forward-thinking companies and talented professionals.</li>
           </ul>
         </div>
-        <div className="need_talent_box">
+        <div className="need_talent_box" data-aos = "fade-left">
           <h3 className="h3">Need Talent?</h3>
           <h5 className="h5">Why job seekers love us</h5>
           <ul className="ul">

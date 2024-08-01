@@ -5,15 +5,23 @@ import { FaCode } from "react-icons/fa6";
 import { MdOutlineEngineering, MdCurrencyRupee  } from "react-icons/md";
 import { GrTechnology } from "react-icons/gr";
 import { PiUserSound } from "react-icons/pi";
-
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 function Category() {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+      offset: 140,
+    });
+  });
   return (
     <>
       <section className="category_Section">
         <h3 className="category_heading">Explore by category</h3>
         <div className="category_boxes">
-          <div className="design_category box">
+          <div className="design_category box" data-aos="fade-left">
             <div className="icons_div">
               <SiVorondesign  />
             </div>
@@ -23,7 +31,7 @@ function Category() {
             </div>
           </div>
 
-          <div className="analyst_category box">
+          <div className="analyst_category box" data-aos="fade-left">
             <div className="icons_div">
               <TbBrandGoogleAnalytics />
             </div>
@@ -33,7 +41,7 @@ function Category() {
             </div>
           </div>
 
-          <div className="electrician_category box">
+          <div className="electrician_category box" data-aos="fade-right">
           <div className="icons_div">
               <TbRazorElectric />
             </div>
@@ -43,7 +51,7 @@ function Category() {
             </div>
           </div>
 
-          <div className="finance_category box">
+          <div className="finance_category box" data-aos="fade-right">
           <div className="icons_div">
               <MdCurrencyRupee  />
             </div>
@@ -53,7 +61,7 @@ function Category() {
             </div>
           </div>
 
-          <div className="technology_category box">
+          <div className="technology_category box" data-aos="fade-left">
           <div className="icons_div">
               <GrTechnology />
             </div>
@@ -63,7 +71,7 @@ function Category() {
             </div>
           </div>
 
-          <div className="engineering_category box">
+          <div className="engineering_category box" data-aos="fade-left">
           <div className="icons_div">
               <MdOutlineEngineering />
             </div>
@@ -73,7 +81,7 @@ function Category() {
             </div>
           </div>
 
-          <div className="marketing_category box">
+          <div className="marketing_category box" data-aos="fade-right">
           <div className="icons_div">
               <PiUserSound />
             </div>
@@ -82,7 +90,7 @@ function Category() {
               <p className="para">235 Jobs Available</p>
             </div>
           </div>
-          <div className="programmer_category box">
+          <div className="programmer_category box" data-aos="fade-right">
           <div className="icons_div">
               <FaCode />
             </div>
