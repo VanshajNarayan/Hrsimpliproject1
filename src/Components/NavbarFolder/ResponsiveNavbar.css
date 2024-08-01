@@ -1,0 +1,65 @@
+.res_Navbar{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  z-index: 1;
+}
+
+.res_Navbar ul{
+  display: inline-block;
+  list-style: none;
+  margin: 1rem;
+}
+
+.res_Navbar ul li{
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.res_Navbar ul li a{
+  color: #E7E8D8;
+  text-decoration: none;
+}
+
+.res_Navbar ul li .login_btn{
+  margin-top: 3rem;
+  padding: 0.7rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: 2px solid blue;
+  background: none;
+  color: blue;
+  max-width: 10rem;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.res_Navbar ul li .signIn_btn{
+  margin-top: 1rem;
+  padding: 0.7rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: blue;
+  color: blue;
+  max-width: 10rem;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media(min-width : 1100px){
+  .res_Navbar{
+    display: none;
+  }
+}
+

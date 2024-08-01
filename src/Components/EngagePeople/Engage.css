@@ -1,0 +1,54 @@
+.engage_people_Section{
+  max-width: 120rem;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 6rem;
+}
+
+.engage_people_Section .engageText_part{
+  display: grid;
+  place-items: center;
+}
+
+.engage_people_Section .engageText_part .engage_heading{
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.engage_people_Section .engageText_part .engage_heading span{
+  color: blue;
+}
+
+.engage_people_Section .engageText_part .engage_para{
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.engage_people_Section .engageText_part .postJob_btn{
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.5rem 4rem;
+  border: none;
+  background: blue;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.engage_people_Section .engage_people{
+  display: grid;
+  place-items: center;
+}
+
+.engage_people_Section .engage_people .engage_animation{
+  max-width: 70rem;
+  width: 100%;
+}

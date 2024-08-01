@@ -1,0 +1,157 @@
+.swiper {
+  max-width: 120rem;
+  width: 100%;
+  padding: 1rem 1rem 6rem 0rem;
+}
+
+.swiper-slide {
+  background: #fff;
+}
+
+.latestJob_section{
+  max-width: 120rem;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+.latestJob_section .job_heading{
+  /* border: 2px solid green; */
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.latestJob_section .job_heading span{
+  color: blue;
+}
+
+.latestJob_section .browse{
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-left: 2rem;
+  border-bottom: 1px solid black;
+}
+
+.latestJob_section .arrow_icon{
+  color: blue;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.latestJob_section .jobPost_box{
+  padding: 2rem 2rem 2rem 2rem;
+  margin-top: 1rem;
+  max-width: 120rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+  gap: 2rem;
+}
+
+/* .latestJob_section .jobPost_box .job_box{
+  border: 2px solid rgb(216, 143, 112);
+} */
+
+.latestJob_section .jobPost_box .job_box .first_div{
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latestJob_section .jobPost_box .job_box .first_div .one{
+  padding: 0.7rem 2rem 0.7rem 0rem;
+}
+
+.latestJob_section .jobPost_box .job_box .first_div .second{
+  padding-right: 4rem;
+}
+
+.latestJob_section .jobPost_box .job_box .first_div .first, .latestJob_section .jobPost_box .job_box .first_div .second{
+  border-right: 1px solid rgba(0, 0, 0, 0.788);
+}
+
+.latestJob_section .jobPost_box .job_box .first_div .one .job_para{
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(107, 107, 172);
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.latestJob_section .jobPost_box .job_box .first_div .one .job_detail{
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.latestJob_section .jobPost_box .job_box .second_div{
+  /* border: 2px solid green; */
+  margin-top: 1rem;
+}
+
+.latestJob_section .jobPost_box .job_box .second_div .iconsAndjobName{
+  display: flex;
+  align-items: center;
+}
+
+.latestJob_section .jobPost_box .job_box .second_div .iconsAndjobName .job_icons{
+  font-size: 3rem;
+  color: blue;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.latestJob_section .jobPost_box .job_box .third_div{
+  /* border: 2px solid brown; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latestJob_section .jobPost_box .job_box .third_div .flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latestJob_section .jobPost_box .job_box .third_div .location_icons{
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: rgb(97, 97, 145);
+}
+
+.latestJob_section .jobPost_box .job_box .third_div .location{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(107, 107, 172);
+  text-transform: capitalize;
+}
+
+.latestJob_section .jobPost_box .job_box .third_div .more_Detail{
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.724);
+}
+
+.latestJob_section .jobPost_box .job_box .second_div .job_description{
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-top: 0.7rem;
+}
+
+.latestJob_section .jobPost_box .job_box .second_div .iconsAndjobName .jobName{
+  font-size: 2.7rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}

@@ -1,0 +1,48 @@
+.h3{
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-family:'monospace';
+  text-transform: capitalize;
+}
+
+.h5{
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.ul{
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.ul li{
+  margin-bottom: 0.7rem;
+}
+
+.jobSeekers_Section{
+  max-width: 120rem;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  margin-bottom: 3rem;
+  font-family:'monospace';
+}
+
+.jobSeekers_Section .got_talent_box{
+  background-color: #b4b0d5;
+  padding: 4rem;
+  text-align: center;
+}
+
+.jobSeekers_Section .need_talent_box{
+  background-color: #fef3e2dd;
+  padding: 4rem;
+  text-align: center;
+}
+

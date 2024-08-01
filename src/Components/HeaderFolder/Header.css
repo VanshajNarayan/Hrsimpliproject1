@@ -1,0 +1,21 @@
+.header{
+  height: 80vh;
+  background-image: url("https://images.unsplash.com/photo-1531547255897-f400dc1b7de2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* background-image: url("https://images.unsplash.com/photo-1543269664-02e941c052f7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  /* background-image: url("https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  /* background-image: url("https://media.istockphoto.com/id/1215729904/photo/caucasian-woman-using-a-laptop-and-a-phone-in-a-bean-bag.jpg?s=2048x2048&w=is&k=20&c=1756chX2yu5mPB87k7lutHTvnUkfJCj_lrG4af59rac="); */
+  background-repeat: no-repeat;
+  background-size: bottom;
+  background-position: center;
+}
+
+@media(max-width : 835px){
+  .header{
+    height: 100vh;
+  }
+}
+@media(max-width : 600px){
+  .header{
+    height: 85vh;
+  }
+}
