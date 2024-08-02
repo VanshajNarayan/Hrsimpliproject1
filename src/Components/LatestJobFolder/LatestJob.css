@@ -26,7 +26,7 @@
 }
 
 .latestJob_section .job_heading span{
-  color: blue;
+  color: #1e55de;
 }
 
 .latestJob_section .browse{
@@ -46,7 +46,7 @@
 }
 
 .latestJob_section .jobPost_box{
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 2rem 3rem 2rem 2rem;
   margin-top: 1rem;
   max-width: 120rem;
   width: 100%;
@@ -81,7 +81,7 @@
 .latestJob_section .jobPost_box .job_box .first_div .one .job_para{
   font-size: 1rem;
   font-weight: 500;
-  color: rgb(107, 107, 172);
+  color: #8faaef;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
 }
@@ -90,6 +90,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .latestJob_section .jobPost_box .job_box .second_div{
@@ -109,6 +110,10 @@
   margin-right: 2rem;
 }
 
+.latestJob_section .jobPost_box .job_box .second_div .iconsAndjobName .jobName{
+  color: #1d1b20;
+}
+
 .latestJob_section .jobPost_box .job_box .third_div{
   /* border: 2px solid brown; */
   display: flex;
@@ -123,15 +128,15 @@
 }
 
 .latestJob_section .jobPost_box .job_box .third_div .location_icons{
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-right: 1rem;
-  color: rgb(97, 97, 145);
+  color: #809fec;
 }
 
 .latestJob_section .jobPost_box .job_box .third_div .location{
   font-size: 1.3rem;
   font-weight: 600;
-  color: rgb(107, 107, 172);
+  color: #8faaef;
   text-transform: capitalize;
 }
 
@@ -140,14 +145,15 @@
   font-weight: 500;
   text-transform: capitalize;
   cursor: pointer;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.724);
+  border-bottom: 1px solid #1e1e1e;
 }
 
 .latestJob_section .jobPost_box .job_box .second_div .job_description{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 400;
   text-transform: capitalize;
   margin-top: 0.7rem;
+  color: #1e1e1e;
 }
 
 .latestJob_section .jobPost_box .job_box .second_div .iconsAndjobName .jobName{
@@ -155,3 +161,7 @@
   font-weight: 600;
   text-transform: capitalize;
 }
+
+/* Clip path group */
+
+

@@ -18,7 +18,7 @@
 }
 
 .box{
-  border: 2px solid rgba(0, 0, 255, 0.536);
+  border: 2px solid #1E55DE;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@
 
 .box .icons_div{
   font-size: 4.3rem;
-  color: rgba(0, 0, 255, 0.5);
+  color: #1E55DE;
   margin-right: 2rem;
   margin-top: 2rem;
 }

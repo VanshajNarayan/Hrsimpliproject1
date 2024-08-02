@@ -21,7 +21,7 @@
 }
 
 .engage_people_Section .engageText_part .engage_heading span{
-  color: blue;
+  color: #1e55de;
 }
 
 .engage_people_Section .engageText_part .engage_para{
@@ -36,7 +36,7 @@
   font-weight: 600;
   padding: 1.5rem 4rem;
   border: none;
-  background: blue;
+  background: #1e55de;
   color: #fff;
   text-transform: capitalize;
   border-radius: 5px;

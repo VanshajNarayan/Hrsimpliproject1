@@ -10,10 +10,7 @@ function SearchLocation() {
     locationValue: "",
   });
   function handleSearch() {
-    if (
-      (showInput.searchText && showInput.searchValue !== "") ||
-      (showInput.locationText && showInput.locationValue !== "")
-    ) {
+    if (showInput.searchValue !== "" || showInput.locationValue !== "") {
       setShowInput({
         ...showInput,
         searchValue: "",
@@ -21,48 +18,57 @@ function SearchLocation() {
         searchText: false,
         locationText: false,
       });
-    };
-  };
+    }
+  }
   return (
     <>
       <section className="search_Location">
         <div className="keyword_box">
-          <MdOutlineSearch
-            title="Click to Search"
-            className={showInput.searchText ? "icons" : "icons2"}
-            onClick={() =>
-              setShowInput({ ...showInput, searchText: !showInput.searchText })
-            }
-          />
-          {showInput.searchText ? (
+          <div
+            className="iconAndInputBox"
+            style={{ maxWidth: `${showInput.searchText ? "21rem" : "13rem"}` }}>
+            <MdOutlineSearch
+              title="Click to Search"
+              className={showInput.searchText ? "icons" : "icons2"}
+            />
+
             <input
               type="text"
               value={showInput.searchValue}
+              style={{
+                maxWidth: `${showInput.searchText ? "19rem" : "10rem"}`,
+              }}
               name="search"
               id="search"
               autoComplete="off"
               placeholder="Search"
-              className="scale-up-right"
+              className={showInput.searchText && "scale-up-right"}
+              onClick={() =>
+                setShowInput({
+                  ...showInput,
+                  searchText: !showInput.searchText,
+                })
+              }
               onChange={(e) =>
                 setShowInput({ ...showInput, searchValue: e.target.value })
               }
             />
-          ) : (
-            <p className="Search">Search</p>
-          )}
+          </div>
+
+          <p className={showInput.searchText ? "SearchHidden" : "Search"}>
+            Search
+          </p>
         </div>
         <div className="location_box">
-          <MdOutlineLocationOn
-            title="Click to Locate"
-            className={showInput.locationText ? "icons" : "icons2"}
-            onClick={() =>
-              setShowInput({
-                ...showInput,
-                locationText: !showInput.locationText,
-              })
-            }
-          />
-          {showInput.locationText ? (
+          <div
+            className="iconAndInputBox"
+            style={{
+              maxWidth: `${showInput.locationText ? "21rem" : "13rem"}`,
+            }}>
+            <MdOutlineLocationOn
+              title="Click to Locate"
+              className={showInput.locationText ? "icons" : "icons2"}
+            />
             <input
               type="text"
               value={showInput.locationValue}
@@ -70,14 +76,21 @@ function SearchLocation() {
               id="location"
               autoComplete="off"
               placeholder="Location"
-              className="scale-up-right"
+              className={showInput.locationText ? "scale-up-right" : ""}
+              onClick={() =>
+                setShowInput({
+                  ...showInput,
+                  locationText: !showInput.locationText,
+                })
+              }
               onChange={(e) =>
                 setShowInput({ ...showInput, locationValue: e.target.value })
               }
             />
-          ) : (
-            <p className="location">Location</p>
-          )}
+          </div>
+          <p className={showInput.locationText ? "locationHidden" : "location"}>
+            Location
+          </p>
         </div>
         <div className="searchBtn_box">
           <button className="Search_btn" onClick={handleSearch}>

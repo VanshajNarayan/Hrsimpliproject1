@@ -6,12 +6,13 @@
   grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   gap: 1rem;
   background: rgb(215, 215, 215);
-  padding: 0.6rem 0.7rem;
+  padding: 1.1rem 0.7rem;
 }
 
 .keyword_box, .location_box, .searchBtn_box{
   display: grid; 
   place-items: center; 
+  position: relative;
 }
 
 .keyword_box{
@@ -26,29 +27,47 @@
   font-weight: 400;
 }
 
+.iconAndInputBox{
+  border-radius: 80px;
+  margin-right: 1rem;
+  max-width: 0;
+  width: 100%;
+}
+
+.keyword_box .SearchHidden{
+  display: none;
+}
+
 input{
   font-size: 1.5rem;
   font-weight: 500;
-  max-width: 20rem;
   width: 100%;
-  border: 2px solid rgb(37, 36, 36);
+  border: none;
   outline: none;
   padding: 0.6rem 2rem;
   background: none;
   margin-left: 1rem;
   border-radius: 60px;
+  padding-left: 3rem;
 }
 
 .icons2{
-  font-size: 2.2rem;
+  position: absolute;
+  top: 22%;
+  left: 10%;
+  font-size: 2rem;
   margin-right: 1.7rem;
   margin-top: 0.4rem;
   cursor: pointer;
 }
 
 .icons{
+  position: absolute;
+  top: 24%;
+  left: 10%;
   font-size: 2.2rem;
-  margin-top: 0.3rem;
+  margin-right: 1.7rem;
+  margin-top: 0.4rem;
   cursor: pointer;
 }
 
@@ -63,13 +82,17 @@ input{
   font-weight: 400;
 }
 
+.location_box .locationHidden{
+  display: none;
+}
+
 .searchBtn_box .Search_btn{
   padding: 1.6rem 2rem;
   max-width: 16rem;
   width: 100%;
   text-transform: capitalize;
   color: #fff;
-  background-color: blue;
+  background-color: #1E55DE;
   font-size: 1.6rem;
   font-weight: 600;
   border-radius: 8px;

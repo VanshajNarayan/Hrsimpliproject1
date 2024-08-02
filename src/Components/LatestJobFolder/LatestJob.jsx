@@ -28,7 +28,7 @@ function LatestJob(){
         modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide> <Posts/> </SwiperSlide>
+        <SwiperSlide><Posts/></SwiperSlide>
         <SwiperSlide><Posts/></SwiperSlide>
         <SwiperSlide><Posts/></SwiperSlide>
         <SwiperSlide><Posts/></SwiperSlide>
