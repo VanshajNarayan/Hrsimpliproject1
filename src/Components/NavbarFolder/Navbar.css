@@ -12,6 +12,10 @@
   text-transform: capitalize;
 }
 
+.navbar li .active{
+  color: blue;
+}
+
 .navbar li a{
   text-decoration: none;
   color: #605656;

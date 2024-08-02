@@ -1,12 +1,12 @@
 .search_Location{
-  max-width: 80rem;
+  max-width: 80rem;  
   width: 100%;
   margin: 3rem auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   gap: 1rem;
   background: rgb(215, 215, 215);
-  padding: 1rem;
+  padding: 0.6rem 0.7rem;
 }
 
 .keyword_box, .location_box, .searchBtn_box{
@@ -21,15 +21,35 @@
   align-items: center;
 }
 
-.keyword_box .search{
+.keyword_box .Search{
   font-size: 1.8rem;
   font-weight: 400;
 }
 
+input{
+  font-size: 1.5rem;
+  font-weight: 500;
+  max-width: 20rem;
+  width: 100%;
+  border: 2px solid rgb(66, 42, 251);
+  outline: none;
+  padding: 0.6rem 2rem;
+  background: none;
+  margin-left: 1rem;
+  border-radius: 60px;
+}
+
+.icons2{
+  font-size: 2.2rem;
+  margin-right: 1.7rem;
+  margin-top: 0.4rem;
+  cursor: pointer;
+}
+
 .icons{
-  font-size: 2rem;
-  margin-right: 3rem;
-  margin-top: 0.5rem;
+  font-size: 2.2rem;
+  margin-top: 0.3rem;
+  cursor: pointer;
 }
 
 .location_box{
@@ -56,4 +76,20 @@
   border: none;
   cursor: pointer;
 }
+
+.scale-up-right {
+	animation: scale-up-right 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up-right {
+  0% {
+    transform: scale(0.5);
+    transform-origin: 100% 50%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 100% 50%;
+  }
+}
+
 

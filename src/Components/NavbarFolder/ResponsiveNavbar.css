@@ -20,6 +20,10 @@
   text-transform: capitalize;
 }
 
+.res_Navbar ul li .active{
+  color: blue;
+}
+
 .res_Navbar ul li a{
   color: #E7E8D8;
   text-decoration: none;

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./ResponsiveNavbar.css";
 
 function ResponsiveNavbar() {
@@ -6,16 +7,16 @@ function ResponsiveNavbar() {
       <nav className="res_Navbar">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <a href="/">About Us</a>
+            <NavLink to="/about">About Us</NavLink>
           </li>
           <li>
-            <a href="/">For job Seekers</a>
+            <NavLink to="/jobseekers">For job Seekers</NavLink>
           </li>
           <li>
-            <a href="/">For companies</a>
+            <NavLink to="/companies">For companies</NavLink>
           </li>
           <li>
             <button className="login_btn">Log In</button>

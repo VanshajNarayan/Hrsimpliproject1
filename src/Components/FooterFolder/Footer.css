@@ -14,7 +14,6 @@ footer{
 
 footer .boxs{
   padding: 2rem;
-  color: #fff;
 }
 
 footer .boxs .p{
@@ -22,6 +21,7 @@ footer .boxs .p{
   margin-bottom: 2rem;
   text-transform: capitalize;
   font-weight: 600;
+  color: black;
 }
 
 footer .boxs ul{
@@ -33,4 +33,15 @@ footer .boxs ul{
 
 footer .boxs ul li{
   margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+footer .boxs ul li a{
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+footer .boxs ul li a:hover{
+  color: rgb(14, 12, 12);
 }

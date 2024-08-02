@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
 import ResponsiveNavbar from "./ResponsiveNavbar";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [tf, setTf] = useState(false);
@@ -10,17 +11,17 @@ function Navbar() {
     <>
       <nav className="navbar">
         <ul>
-          <li>
-            <a href="/">Home</a>
+          <li className="active">
+            <NavLink to="/">Home</NavLink>
           </li>
-          <li>
-            <a href="/">About Us</a>
+          <li className="active">
+            <NavLink to="/about">About Us</NavLink>
           </li>
-          <li>
-            <a href="/">For job Seekers</a>
+          <li className="active">
+            <NavLink to="/jobseekers">For job Seekers</NavLink>
           </li>
-          <li>
-            <a href="/">For companies</a>
+          <li className="active">
+            <NavLink to="/companies">For companies</NavLink>
           </li>
           <li>
             <button className="login_btn">Log In</button>
