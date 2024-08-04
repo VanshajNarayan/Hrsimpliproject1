@@ -4,6 +4,8 @@ import Home from './Components/HomeFolder/Home';
 import About from './Components/AboutFolder/About';
 import ForJob from './Components/ForJobSeekerFolder/ForJob';
 import Companies from './Components/CompaniesFolder/Compani';
+import Login from './Components/LoginFolder/Login';
+import Signin from './Components/SignInFolder/Signin';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/jobseekers" element={<ForJob/>} />
           <Route path="/companies" element={<Companies/>} />
+          <Route path='/login' element={<Login/>} />
+          <Route path='/signin' element={<Signin/>} />
         </Routes>
       </Router>
     </>

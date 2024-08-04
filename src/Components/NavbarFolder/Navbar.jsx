@@ -24,10 +24,14 @@ function Navbar() {
             <NavLink to="/companies">For companies</NavLink>
           </li>
           <li>
-            <button className="login_btn">Log In</button>
+              <NavLink to="/login">
+                <button className="login_btn" style={{ color: "#1E55DE" }}>Log In</button>
+              </NavLink>
           </li>
           <li>
-            <button className="signIn_btn">Sign In</button>
+            <NavLink to= "/signin">
+              <button className="signIn_btn" >Sign In</button>
+            </NavLink>
           </li>
         </ul>
         <div className="menu_bar">

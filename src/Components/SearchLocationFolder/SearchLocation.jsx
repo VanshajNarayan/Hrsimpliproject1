@@ -42,7 +42,7 @@ function SearchLocation() {
               id="search"
               autoComplete="off"
               placeholder="Search"
-              className={showInput.searchText && "scale-up-right"}
+              className={showInput.searchText ? "scale-up-right" : undefined}
               onClick={() =>
                 setShowInput({
                   ...showInput,
@@ -76,7 +76,7 @@ function SearchLocation() {
               id="location"
               autoComplete="off"
               placeholder="Location"
-              className={showInput.locationText ? "scale-up-right" : ""}
+              className={showInput.locationText ? "scale-up-right" : undefined}
               onClick={() =>
                 setShowInput({
                   ...showInput,
