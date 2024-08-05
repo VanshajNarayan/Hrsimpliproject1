@@ -2,8 +2,30 @@ import "./Signin.css";
 import logo from "../Assets/HrSimpliLogo.jpeg";
 import { TiStar } from "react-icons/ti";
 import { NavLink } from "react-router-dom";
+import { HiEye, HiEyeOff } from "react-icons/hi";
+import { useState } from "react";
 
 function Signin() {
+  const [signInState, setSignInState] = useState({
+    passwordEye: false,
+    emailValue: "",
+    passwordValue: "",
+  });
+  function handlePassword(e) {
+    setSignInState({
+      ...signInState,
+      passwordValue: e.target.value,
+    });
+  };
+  function handleSubmit() {
+    if (signInState.emailValue !== "" && signInState.passwordValue !== "") {
+      setSignInState({
+        ...signInState,
+        emailValue: "",
+        passwordValue: "",
+      });
+    }
+  };
   return (
     <>
       <section className="signin_Section">
@@ -37,22 +59,69 @@ function Signin() {
                 </label>
                 <input
                   type="email"
+                  value={signInState.emailValue}
                   name="email"
                   id="email"
                   autoComplete="off"
                   className="email"
+                  onChange={(e) =>
+                    setSignInState({
+                      ...signInState,
+                      emailValue: e.target.value,
+                    })
+                  }
+                  required
                 />
-                <label className="label">
-                  Password <TiStar className="star_icon" />
-                </label>
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  autoComplete="off"
-                  className="password"
-                />
-                <button type="submit" className="create_btn">
+                <div className="password_box">
+                  <label className="label">
+                    Password <TiStar className="star_icon" />
+                  </label>
+                  <input
+                    type={
+                      signInState.passwordEye === true ? "text" : "password"
+                    }
+                    value={signInState.passwordValue}
+                    name="password"
+                    id="password"
+                    autoComplete="off"
+                    className="password"
+                    pattern="(?=.*\d)(?=.*?[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*?[!@#$%^&*+`~=?\|<>/]).{8,}"
+                    title="Minimum of 8 characters with 1 uppercase, 1 lowercase, 1
+                    number and 1 special character"
+                    required
+                    onChange={(e) => handlePassword(e)}
+                  />
+                  {signInState.passwordEye === true ? (
+                    <HiEyeOff
+                      className="password_eye"
+                      onClick={() =>
+                        setSignInState({
+                          ...signInState,
+                          passwordEye: !signInState.passwordEye,
+                        })
+                      }
+                    />
+                  ) : (
+                    <HiEye
+                      className="password_eye"
+                      onClick={() =>
+                        setSignInState({
+                          ...signInState,
+                          passwordEye: !signInState.passwordEye,
+                        })
+                      }
+                    />
+                  )}
+                  <p className="password_pattern_details">
+                    Minimum of 8 characters with 1 uppercase, 1 lowercase, 1
+                    <br />
+                    number and 1 special character
+                  </p>
+                </div>
+                <button
+                  type="submit"
+                  className="create_btn"
+                  onClick={handleSubmit}>
                   create account
                 </button>
               </form>

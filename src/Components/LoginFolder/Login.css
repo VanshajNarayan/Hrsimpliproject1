@@ -1,0 +1,33 @@
+.rememberMe_forgotPassword{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+
+.rememberMe_forgotPassword .remberAndlabel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rememberMe_forgotPassword #rememberMe{
+  width: 20px;
+  height: 20px;
+  border: 2px solid #5b5a5a;
+  outline: none;
+}
+
+.rememberMe_forgotPassword .rememberMe{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 0.7rem;
+  color: #5b5a5a;
+}
+
+.rememberMe_forgotPassword .forgot_password{
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.07rem;
+  color: #1e55de;
+}
